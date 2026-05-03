@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/western-and-southern-financial/main/json-schema/western-and-southern-financial-policy-schema.json",
+  "title": "Insurance Policy",
+  "description": "Represents a life insurance or annuity policy issued by Western & Southern Financial Group.",
+  "type": "object",
+  "properties": {
+    "policyNumber": {
+      "type": "string",
+      "description": "Unique policy identifier assigned by Western & Southern."
+    },
+    "policyType": {
+      "type": "string",
+      "description": "Type of policy.",
+      "enum": [
+        "Term Life",
+        "Whole Life",
+        "Universal Life",
+        "Variable Universal Life",
+        "Fixed Annuity",
+        "Variable Annuity",
+        "Indexed Annuity",
+        "Accident Protection"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "Current policy status.",
+      "enum": ["Active", "Lapsed", "Surrendered", "Matured", "Paid-Up", "Pending"]
+    },
+    "effectiveDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the policy became effective."
+    },
+    "expirationDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the policy expires (for term policies)."
+    },
+    "premium": {
+      "type": "object",
+      "description": "Premium payment details.",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "format": "double",
+          "description": "Premium amount in USD."
+        },
+        "frequency": {
+          "type": "string",
+          "enum": ["Monthly", "Quarterly", "Semi-Annual", "Annual"],
+          "description": "Payment frequency."
+        },
+        "nextDueDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Next premium due date."
+        }
+      },
+      "required": ["amount", "frequency"]
+    },
+    "deathBenefit": {
+      "type": "number",
+      "format": "double",
+      "description": "Death benefit amount in USD."
+    },
+    "cashValue": {
+      "type": "number",
+      "format": "double",
+      "description": "Current cash value of the policy (for permanent life and annuity products)."
+    },
+    "surrenderValue": {
+      "type": "number",
+      "format": "double",
+      "description": "Net surrender value after applicable charges."
+    },
+    "owner": {
+      "$ref": "#/$defs/Person",
+      "description": "Policy owner."
+    },
+    "insured": {
+      "$ref": "#/$defs/Person",
+      "description": "Insured individual."
+    },
+    "beneficiaries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Beneficiary"
+      },
+      "description": "List of designated beneficiaries."
+    },
+    "subsidiary": {
+      "type": "string",
+      "description": "W&S subsidiary issuing the policy.",
+      "enum": [
+        "Western & Southern Life Insurance Company",
+        "Western-Southern Life Assurance Company",
+        "Columbus Life Insurance Company",
+        "Gerber Life Insurance Company",
+        "Integrity Life Insurance Company",
+        "National Integrity Life Insurance Company",
+        "Lafayette Life Insurance Company"
+      ]
+    }
+  },
+  "required": ["policyNumber", "policyType", "status", "effectiveDate"],
+  "$defs": {
+    "Person": {
+      "type": "object",
+      "properties": {
+        "firstName": {"type": "string"},
+        "lastName": {"type": "string"},
+        "dateOfBirth": {"type": "string", "format": "date"},
+        "ssn": {"type": "string", "description": "Masked SSN for identification."},
+        "email": {"type": "string", "format": "email"},
+        "phone": {"type": "string"}
+      },
+      "required": ["firstName", "lastName"]
+    },
+    "Beneficiary": {
+      "type": "object",
+      "properties": {
+        "firstName": {"type": "string"},
+        "lastName": {"type": "string"},
+        "relationship": {
+          "type": "string",
+          "enum": ["Spouse", "Child", "Parent", "Sibling", "Estate", "Trust", "Other"]
+        },
+        "sharePercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "beneficiaryType": {
+          "type": "string",
+          "enum": ["Primary", "Contingent"]
+        }
+      },
+      "required": ["firstName", "lastName", "sharePercentage", "beneficiaryType"]
+    }
+  }
+}

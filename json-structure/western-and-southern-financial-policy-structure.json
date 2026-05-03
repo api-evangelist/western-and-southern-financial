@@ -1,0 +1,28 @@
+{
+  "name": "Insurance Policy",
+  "description": "Life insurance policy structure for Western & Southern Financial Group.",
+  "fields": [
+    {"name": "policyNumber", "type": "string", "required": true, "description": "Unique policy identifier."},
+    {"name": "policyType", "type": "string", "required": true, "description": "Type of policy (Term Life, Whole Life, Universal Life, Fixed Annuity, etc.)."},
+    {"name": "status", "type": "string", "required": true, "description": "Active, Lapsed, Surrendered, Matured, Paid-Up, or Pending."},
+    {"name": "effectiveDate", "type": "date", "required": true, "description": "Date the policy became effective."},
+    {"name": "expirationDate", "type": "date", "required": false, "description": "Date the policy expires (term policies only)."},
+    {"name": "premium.amount", "type": "number", "required": true, "description": "Premium amount in USD."},
+    {"name": "premium.frequency", "type": "string", "required": true, "description": "Monthly, Quarterly, Semi-Annual, or Annual."},
+    {"name": "premium.nextDueDate", "type": "date", "required": false, "description": "Next premium payment due date."},
+    {"name": "deathBenefit", "type": "number", "required": false, "description": "Death benefit amount in USD."},
+    {"name": "cashValue", "type": "number", "required": false, "description": "Current cash value in USD."},
+    {"name": "surrenderValue", "type": "number", "required": false, "description": "Net surrender value in USD."},
+    {"name": "owner.firstName", "type": "string", "required": true, "description": "Policy owner first name."},
+    {"name": "owner.lastName", "type": "string", "required": true, "description": "Policy owner last name."},
+    {"name": "owner.dateOfBirth", "type": "date", "required": false, "description": "Policy owner date of birth."},
+    {"name": "insured.firstName", "type": "string", "required": true, "description": "Insured person first name."},
+    {"name": "insured.lastName", "type": "string", "required": true, "description": "Insured person last name."},
+    {"name": "beneficiaries[].firstName", "type": "string", "required": true, "description": "Beneficiary first name."},
+    {"name": "beneficiaries[].lastName", "type": "string", "required": true, "description": "Beneficiary last name."},
+    {"name": "beneficiaries[].relationship", "type": "string", "required": false, "description": "Relationship to insured."},
+    {"name": "beneficiaries[].sharePercentage", "type": "number", "required": true, "description": "Percentage of benefit allocated."},
+    {"name": "beneficiaries[].beneficiaryType", "type": "string", "required": true, "description": "Primary or Contingent."},
+    {"name": "subsidiary", "type": "string", "required": false, "description": "W&S subsidiary issuing the policy."}
+  ]
+}

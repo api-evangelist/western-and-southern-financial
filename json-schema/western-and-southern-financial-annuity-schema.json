@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/western-and-southern-financial/main/json-schema/western-and-southern-financial-annuity-schema.json",
+  "title": "Annuity Contract",
+  "description": "Represents an annuity contract issued by Western & Southern Financial Group subsidiaries.",
+  "type": "object",
+  "properties": {
+    "contractNumber": {
+      "type": "string",
+      "description": "Unique annuity contract identifier."
+    },
+    "annuityType": {
+      "type": "string",
+      "description": "Type of annuity contract.",
+      "enum": [
+        "Fixed Annuity",
+        "Fixed Indexed Annuity",
+        "Variable Annuity",
+        "Immediate Annuity",
+        "Deferred Income Annuity"
+      ]
+    },
+    "phase": {
+      "type": "string",
+      "description": "Current phase of the annuity.",
+      "enum": ["Accumulation", "Distribution", "Annuitization"]
+    },
+    "issueDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the contract was issued."
+    },
+    "maturityDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the contract matures."
+    },
+    "accumulationValue": {
+      "type": "number",
+      "format": "double",
+      "description": "Current accumulation value in USD."
+    },
+    "surrenderValue": {
+      "type": "number",
+      "format": "double",
+      "description": "Net surrender value after surrender charges in USD."
+    },
+    "interestRate": {
+      "type": "number",
+      "format": "double",
+      "description": "Current credited interest rate (for fixed annuities)."
+    },
+    "surrenderChargePeriod": {
+      "type": "integer",
+      "description": "Remaining years in the surrender charge period."
+    },
+    "payoutOption": {
+      "type": "string",
+      "description": "Selected payout option upon annuitization.",
+      "enum": [
+        "Life Only",
+        "Life with Period Certain",
+        "Joint and Survivor",
+        "Period Certain Only",
+        "Lump Sum"
+      ]
+    },
+    "monthlyIncome": {
+      "type": "number",
+      "format": "double",
+      "description": "Guaranteed monthly income amount in USD (if annuitized)."
+    },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "firstName": {"type": "string"},
+        "lastName": {"type": "string"},
+        "dateOfBirth": {"type": "string", "format": "date"}
+      }
+    },
+    "riders": {
+      "type": "array",
+      "description": "Optional riders attached to the contract.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "riderType": {
+            "type": "string",
+            "enum": [
+              "Guaranteed Lifetime Withdrawal Benefit",
+              "Death Benefit",
+              "Enhanced Surrender Value",
+              "Long-Term Care"
+            ]
+          },
+          "riderCharge": {
+            "type": "number",
+            "format": "double",
+            "description": "Annual charge as a percentage of contract value."
+          }
+        }
+      }
+    }
+  },
+  "required": ["contractNumber", "annuityType", "phase", "issueDate", "accumulationValue"]
+}

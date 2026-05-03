@@ -1,0 +1,144 @@
+vocabulary:
+  provider: Western And Southern Financial
+  description: >-
+    Vocabulary and taxonomy for Western & Southern Financial Group, a diversified
+    family of financial services companies offering life insurance, annuities,
+    mutual funds, and asset management.
+  tags:
+    - Life Insurance
+    - Annuities
+    - Mutual Funds
+    - Asset Management
+    - Retirement Planning
+    - Financial Services
+    - Institutional Investing
+  terms:
+    - term: Annuity
+      definition: >-
+        A financial product that provides a stream of payments, typically used
+        for retirement income. Western & Southern offers fixed, variable, and
+        indexed annuity products.
+      tags:
+        - Annuities
+        - Retirement
+
+    - term: Life Insurance Policy
+      definition: >-
+        A contract between an insurer and policyholder guaranteeing payment
+        of a death benefit in exchange for premium payments. W&S offers term,
+        whole, universal, and variable universal life products.
+      tags:
+        - Life Insurance
+        - Policy
+
+    - term: Premium
+      definition: >-
+        The periodic payment made by a policyholder to maintain insurance
+        coverage or fund an annuity contract.
+      tags:
+        - Life Insurance
+        - Annuities
+
+    - term: Death Benefit
+      definition: >-
+        The amount paid to beneficiaries upon the death of the insured
+        individual under a life insurance policy.
+      tags:
+        - Life Insurance
+        - Beneficiary
+
+    - term: Beneficiary
+      definition: >-
+        An individual or entity designated to receive policy proceeds or
+        account assets upon the death or qualifying event of the insured
+        or account holder.
+      tags:
+        - Life Insurance
+        - Annuities
+
+    - term: Surrender Value
+      definition: >-
+        The cash value that a policyholder receives upon voluntarily
+        terminating a life insurance policy or annuity contract before
+        maturity or a qualifying event.
+      tags:
+        - Life Insurance
+        - Annuities
+
+    - term: Mutual Fund
+      definition: >-
+        A pooled investment vehicle that collects money from multiple investors
+        and invests in a diversified portfolio of securities, managed by
+        Touchstone Investments under the W&S umbrella.
+      tags:
+        - Mutual Funds
+        - Investments
+
+    - term: Separate Account
+      definition: >-
+        An investment account maintained separately from an insurance
+        company's general account, used to hold assets for variable annuity
+        or variable life insurance products.
+      tags:
+        - Annuities
+        - Asset Management
+
+    - term: Retirement Planning
+      definition: >-
+        Financial planning focused on accumulating assets and income streams
+        sufficient to maintain a desired standard of living throughout
+        retirement years.
+      tags:
+        - Retirement Planning
+        - Financial Services
+
+    - term: Asset Management
+      definition: >-
+        Professional management of investments on behalf of clients to meet
+        specified investment goals, provided through Fort Washington Investment
+        Advisors and Touchstone Investments.
+      tags:
+        - Asset Management
+        - Institutional Investing
+
+    - term: Underwriting
+      definition: >-
+        The process of evaluating risk and determining premium rates and
+        eligibility for insurance coverage.
+      tags:
+        - Life Insurance
+
+    - term: Reinsurance
+      definition: >-
+        Insurance purchased by insurance companies to manage their own risk
+        exposure by transferring portions of risk portfolios to other parties.
+      tags:
+        - Life Insurance
+        - Risk Management
+
+    - term: Net Asset Value
+      definition: >-
+        The per-share value of a mutual fund or ETF, calculated as the total
+        value of the fund's assets minus liabilities, divided by total shares
+        outstanding.
+      tags:
+        - Mutual Funds
+        - Investments
+
+    - term: 401k
+      definition: >-
+        An employer-sponsored retirement savings plan that allows employees
+        to contribute pre-tax income; W&S provides group insurance and
+        retirement products supporting 401(k) plans.
+      tags:
+        - Retirement Planning
+        - Financial Services
+
+    - term: Institutional Investor
+      definition: >-
+        A large entity such as a pension fund, endowment, or sovereign wealth
+        fund that invests large sums of money, served by Fort Washington
+        Investment Advisors.
+      tags:
+        - Institutional Investing
+        - Asset Management

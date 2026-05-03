@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "fibo": "https://spec.edmcouncil.org/fibo/ontology/",
+    "wsf": "https://www.westernsouthern.com/ontology/",
+
+    "FinancialService": "schema:FinancialService",
+    "InsuranceAgency": "schema:InsuranceAgency",
+    "FinancialProduct": "schema:FinancialProduct",
+    "InvestmentFund": "schema:InvestmentFund",
+    "FinancialOrganization": "schema:FinancialService",
+
+    "Policy": {
+      "@id": "wsf:Policy",
+      "@type": "@id"
+    },
+    "policyNumber": {
+      "@id": "wsf:policyNumber",
+      "@type": "xsd:string"
+    },
+    "policyType": {
+      "@id": "wsf:policyType",
+      "@type": "xsd:string"
+    },
+    "premium": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "deathBenefit": {
+      "@id": "wsf:deathBenefit",
+      "@type": "xsd:decimal"
+    },
+    "surrenderValue": {
+      "@id": "wsf:surrenderValue",
+      "@type": "xsd:decimal"
+    },
+    "effectiveDate": {
+      "@id": "schema:startDate",
+      "@type": "xsd:date"
+    },
+    "expirationDate": {
+      "@id": "schema:endDate",
+      "@type": "xsd:date"
+    },
+
+    "Annuity": {
+      "@id": "wsf:Annuity",
+      "@type": "@id"
+    },
+    "annuityType": {
+      "@id": "wsf:annuityType",
+      "@type": "xsd:string"
+    },
+    "accumulationValue": {
+      "@id": "wsf:accumulationValue",
+      "@type": "xsd:decimal"
+    },
+    "payoutOption": {
+      "@id": "wsf:payoutOption",
+      "@type": "xsd:string"
+    },
+    "surrenderChargePeriod": {
+      "@id": "wsf:surrenderChargePeriod",
+      "@type": "xsd:integer"
+    },
+
+    "Beneficiary": {
+      "@id": "wsf:Beneficiary",
+      "@type": "@id"
+    },
+    "beneficiaryName": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "beneficiaryRelationship": {
+      "@id": "wsf:beneficiaryRelationship",
+      "@type": "xsd:string"
+    },
+    "beneficiaryShare": {
+      "@id": "wsf:beneficiaryShare",
+      "@type": "xsd:decimal"
+    },
+
+    "MutualFund": {
+      "@id": "schema:InvestmentFund",
+      "@type": "@id"
+    },
+    "fundSymbol": {
+      "@id": "wsf:fundSymbol",
+      "@type": "xsd:string"
+    },
+    "netAssetValue": {
+      "@id": "wsf:netAssetValue",
+      "@type": "xsd:decimal"
+    },
+    "expenseRatio": {
+      "@id": "wsf:expenseRatio",
+      "@type": "xsd:decimal"
+    },
+    "inceptionDate": {
+      "@id": "schema:startDate",
+      "@type": "xsd:date"
+    },
+
+    "Policyholder": {
+      "@id": "schema:Person",
+      "@type": "@id"
+    },
+    "insured": {
+      "@id": "wsf:insured",
+      "@type": "@id"
+    },
+    "owner": {
+      "@id": "schema:owner",
+      "@type": "@id"
+    }
+  }
+}
