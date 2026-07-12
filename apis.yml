@@ -80,6 +80,8 @@ apis:
         url: https://www.fortwashington.com
 
 common:
+  - type: DomainSecurity
+    url: security/western-and-southern-financial-domain-security.yml
   - type: Website
     url: https://www.westernsouthern.com
   - type: About
