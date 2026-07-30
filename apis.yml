@@ -1,4 +1,17 @@
 aid: western-and-southern-financial
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/western-and-southern-financial.png
 url: https://raw.githubusercontent.com/api-evangelist/western-and-southern-financial/refs/heads/main/apis.yml
 modified: '2026-05-03'
 description: >-
