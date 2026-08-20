@@ -34,6 +34,11 @@ apis:
       - Life Insurance
       - Annuities
       - Retirement
+      - Financial-Services
+    tags_raw:
+      - Life Insurance
+      - Annuities
+      - Retirement
       - Financial Services
     properties:
       - type: Website
@@ -50,6 +55,11 @@ apis:
     humanURL: https://www.gerberlife.com
     baseURL: https://www.gerberlife.com
     tags:
+      - Life Insurance
+      - Family Insurance
+      - Children
+      - Financial-Services
+    tags_raw:
       - Life Insurance
       - Family Insurance
       - Children
@@ -71,6 +81,11 @@ apis:
       - Mutual Funds
       - Asset Management
       - Investments
+      - Financial-Services
+    tags_raw:
+      - Mutual Funds
+      - Asset Management
+      - Investments
       - Financial Services
     properties:
       - type: Website
@@ -85,6 +100,11 @@ apis:
     humanURL: https://www.fortwashington.com
     baseURL: https://www.fortwashington.com
     tags:
+      - Asset Management
+      - Institutional Investing
+      - Portfolio-Management
+      - Financial-Services
+    tags_raw:
       - Asset Management
       - Institutional Investing
       - Portfolio Management
