@@ -38,17 +38,17 @@ apis:
     Company. Customers can access account information, policy details, and manage their coverage through
     digital channels.
   humanURL: https://www.westernsouthern.com/wslife
-  baseURL: https://www.westernsouthern.com
   tags:
   - Life Insurance
   - Annuities
   - Retirement
-  - Financial-Services
+  - Financial Services
   tags_raw:
   - Life Insurance
   - Annuities
   - Retirement
   - Financial Services
+  - Financial-Services
   properties:
   - type: Website
     url: https://www.westernsouthern.com/wslife
@@ -64,12 +64,13 @@ apis:
   - Life Insurance
   - Family Insurance
   - Children
-  - Financial-Services
+  - Financial Services
   tags_raw:
   - Life Insurance
   - Family Insurance
   - Children
   - Financial Services
+  - Financial-Services
   properties:
   - type: Website
     url: https://www.gerberlife.com
@@ -84,12 +85,13 @@ apis:
   - Mutual Funds
   - Asset Management
   - Investment
-  - Financial-Services
+  - Financial Services
   tags_raw:
   - Mutual Funds
   - Asset Management
   - Investments
   - Financial Services
+  - Financial-Services
   properties:
   - type: Website
     url: https://www.touchstoneinvestments.com
@@ -103,13 +105,15 @@ apis:
   tags:
   - Asset Management
   - Institutional Investing
-  - Portfolio-Management
-  - Financial-Services
+  - Portfolio Management
+  - Financial Services
   tags_raw:
   - Asset Management
   - Institutional Investing
   - Portfolio Management
   - Financial Services
+  - Portfolio-Management
+  - Financial-Services
   properties:
   - type: Website
     url: https://www.fortwashington.com
@@ -131,6 +135,13 @@ common:
 - type: LinkedIn
   url: https://www.linkedin.com/company/western-&-southern-financial-group
 tags:
+- Financial Services
+- Life Insurance
+- Asset Management
+- Annuities
+- Retirement
+- Children
+tags_raw:
 - Financial-Services
 - Life Insurance
 - Asset Management
