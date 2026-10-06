@@ -26,7 +26,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/western-and-southern-financial.png
 url: https://raw.githubusercontent.com/api-evangelist/western-and-southern-financial/refs/heads/main/apis.yml
-modified: '2026-09-16'
+modified: '2026-10-06'
 description: Western & Southern Financial Group is a diversified family of financial services companies
   headquartered in Cincinnati, Ohio, offering life insurance, annuities, mutual funds, asset management,
   and other financial products through multiple subsidiary brands including Western & Southern Life, Gerber
@@ -118,6 +118,8 @@ apis:
   - type: Website
     url: https://www.fortwashington.com
 common:
+- url: https://www.westernsouthern.com/about/newsroom
+  type: Blog
 - type: DomainSecurity
   url: security/western-and-southern-financial-domain-security.yml
 - type: Website
